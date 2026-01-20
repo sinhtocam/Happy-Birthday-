@@ -3,7 +3,7 @@ let videoUnlocked = false;
 function unlockVideo() {
   if (videoUnlocked) return;
 
-  const video = document.getElementById("bgVideo");
+  const music = document.getElementById("bgMusic");
   video.muted = false;
   video.volume = 0.3;
   video.play().catch(() => {});
@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 video.muted = false;
 video.volume = 0.3;
+      music.volume = 0.3;
+music.play();
+
 
     }
   }, 1000);
 });
+
